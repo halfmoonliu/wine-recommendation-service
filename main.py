@@ -2,21 +2,17 @@ from flask import Flask, redirect, url_for, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def home():
-    return "Hello! this is the main page <h1>HELLO</h1>"
-
-@app.route("/login", methods=["POST", "GET"])
-def login():
     if request.method == "POST":
-        user = request.form["nm"]
-        return redirect(url_for("user", usr = user))
+        feeling = request.form["feeling"]
+        return redirect(url_for("feeling", feel = feeling))
     else:
-        return render_template("login.html")
+        return render_template("home.html")
 
-@app.route("/<usr>")
-def user(usr):
-    return f"<h1>{usr}</h1>"
+@app.route("/<feel>")
+def feeling(feel):
+    return f"<h1>{feel}</h1>"
 
 if __name__ == "__main__":
     app.run(debug=True)
