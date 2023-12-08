@@ -1,7 +1,7 @@
-
+from dotenv import load_dotenv
+from flask import Flask, render_template, request
 from openai import OpenAI
 import os
-from dotenv import load_dotenv
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -24,10 +24,10 @@ def parse_wine(response):
     This function parses a text response from chatGPT and 
     returns a list of wine names and wineries
     input: a string of chatGPT response
-    output: a tuple of (song name, artist name), both are strings
+    output: a list of recommended wines
     '''
     sentences = [x.split(" ") for x in response.split("\n")]
-    output = ""
+    output = list()
     for sent in sentences:        
         split_ind = None        
         if len(sent) <= 1:
@@ -48,15 +48,10 @@ def parse_wine(response):
             except:
                 split_ind = None
         if split_ind != None:
-            output += " ".join(sent[:split_ind]) + "\n"
+            output.append(" ".join(sent[:split_ind]))            
     return output
     
-#prompt = "I just got divorced"
-#resp = request_rep(prompt)
-#print(resp)
-#print(parse_wine(resp))
 
-from flask import Flask, redirect, url_for, render_template, request
 
 app = Flask(__name__)
 
@@ -75,4 +70,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=9000)
