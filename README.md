@@ -23,15 +23,21 @@ A proof-of-concept of a new **customer engaging feature** is demonstrated below.
 Below is an overview of the repository:
    
 1. **Main functions for querying on Dataset**
-   <br>a. _main.py_: load transaction dataset and **query the aggregated revenue of the a product using PySpark**. Specifically, it executes the following:<br>
-
-3. **Github actions setup for continuous integration**
+   <br>a. _main.py_: The main program building the **flask function**, that does the following:
+      <br>i.   Build the home page for users to input feelings (*home()*).
+      <br>ii.  Send the input as **prompt to** ***OPEN AI API*** to **get wine recommendation** (_request_rep_).
+      <br>iii. **Parse ChatGPT response into readable wine products** (_parse_wine_)
+   <br>b. _./templates_: Webpage template used.
+       <br>i. _home.html_:  The **homepage for users to input feelings**.
+       <br>ii. _response.html_:  The **response page** for **displaying recommeded wines and link for shopping**.
+      
+2. **Github actions setup for continuous integration**
   <br>c. _.github/workflows/main.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
-4. **Other files for development environment settings**
+3. **Other files for development environment settings**
   <br>d. _.devcontainer_: set up the environment for development.
   <br>e. _.gitignore_: specify file names to ignore.
   <br>f. _requirements.txt_: list required packages for the project.
 
-5. **Description of the project**
+4. **Description of the project**
    <br>g. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with example output and code snippets.
