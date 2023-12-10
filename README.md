@@ -14,7 +14,6 @@ A proof-of-concept of a new **customer engaging feature** is demonstrated below.
 
 <img width="571" alt="Empty_URL" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/b26c0b9c-ec04-4d41-890a-bf316dc321df">
 
-
 2. An example input of feeling, which would be a prompt to the **Chat GPT API** for **wine recommendation**.<br>
 
 <img width="570" alt="Input_URL" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/c6bc9852-a54f-4539-a538-28767a771686">
@@ -22,6 +21,14 @@ A proof-of-concept of a new **customer engaging feature** is demonstrated below.
 3. After hitting the button, the user would be redirected to page of **wine recommendation**, with **a link to the company's website**.<br>
 
 <img width="611" alt="Response_URL" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/c6f73995-4177-4ea3-9e33-91a0c7452bb4">
+
+## Upload the Docker image for other to run
+
+After creating an **docker image** for the app, it can be shared (pushed) onto **Docker Hub**, and **people can download the img file to run the app locally**
+
+<img width="1123" alt="Dockerhub" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/b00c331b-93f3-493f-9113-b525b8cbf2f7">
+
+
 
 Below is an overview of the repository:
    
