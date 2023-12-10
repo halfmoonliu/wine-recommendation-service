@@ -5,9 +5,9 @@ This repo demos how to deploy a web-based wine recommendation service using Azur
 
 ## Executive Summary for Actionable Insights
 A proof-of-concept of a new **customer engaging feature** is demonstrated below. The user can input their **feelings, thoughts, or events experienced recently** and **get recommendations of wines** and a **link for wine shopping**. The next **actions items** should include the following:
-1. **Design user interface**: Invite the desinger team to make an interface suitable for this feature.
+1. **Design user interface**: Invite the designer team to make an interface suitable for this feature.
 2. **Deploy the feature**: **Incorporate this feature to wine company website**.
-3. **Collect and analyze data** for further actions: **conversion** rate can be used to assess feature effectiveness. Results on user behavior analysis can be used for **future sales compaign audience targetting** (e.g. who tends to use feature, what kinds of prompt triggers more purchase, etc.)
+3. **Collect and analyze data** for further actions: **conversion** rate can be used to assess feature effectiveness. Results on user behavior analysis can be used for **future sales campaign audience targeting** (e.g. who tends to use feature, what kinds of prompt triggers more purchase, etc.)
 
 ## Feature Walkthrough 
 1. A small box is present for users to input their thought or feeling. If the box is left blank when the submit button is hit, **the page will just reload**.
@@ -33,10 +33,10 @@ Docker run [image_name]
 
 ## Deploy service on Azure
 
-Once the app is built, we can use the docker file to create a docker image. To deploy the app on Azure, one should create an **Azure Container Registry**, **create a container repo**, **push the docker image onto to repo**, and use **the Azure app service** to deploy the app on azure.
+Once the app is built, we can use the docker file to create a docker image. To deploy the app on Azure, one should create an **Azure Container Registry**, **create a container repo**, **push the docker image onto to repo**, and use **the Azure app service** to deploy the app on Azure.
 
 ```
-# Build docker image on Azure container regitry
+# Build docker image on Azure container registry
 docker build -t [RegistryName.azurecr.io]/myapp .
 
 # install homebrew for installing Azure cli (if needed)
@@ -69,7 +69,7 @@ Below is an overview of the repository:
       <br>iii. **Parse ChatGPT response into readable wine products** (_parse_wine_)
    <br>b. _./templates_: Webpage template used.
        <br>i. _home.html_:  The **homepage for users to input feelings**.
-       <br>ii. _response.html_:  The **response page** for **displaying recommeded wines and link for shopping**.
+       <br>ii. _response.html_:  The **response page** for **displaying recommended wines and link for shopping**.
    <br>c. _test_app.py_: Test functions for the application.
    
 3. **Github actions setup for continuous integration**
