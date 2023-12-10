@@ -19,8 +19,7 @@ A proof-of-concept of a new **customer engaging feature** is demonstrated below.
 
 3. After hitting the button, the user would be redirected to page of **wine recommendation**, with **a link to the company's website**.<br>
 
-<img width="609" alt="Response_URL" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/38222606-1233-4c83-9d5a-0a6d8ca5cc6b">
-
+<img width="611" alt="Response_URL" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/c6f73995-4177-4ea3-9e33-91a0c7452bb4">
 
 Below is an overview of the repository:
    
