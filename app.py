@@ -3,11 +3,10 @@ from flask import Flask, render_template, request
 from openai import OpenAI
 import os
 
-load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-client = OpenAI(api_key = OPENAI_API_KEY)
-
 def request_rep(user_input):
+    load_dotenv()
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    client = OpenAI(api_key = OPENAI_API_KEY)
     prompt = user_input + ". Can you recommend me 5 wines specifying the wineries?"
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
