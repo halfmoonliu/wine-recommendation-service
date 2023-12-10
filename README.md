@@ -70,14 +70,15 @@ Below is an overview of the repository:
    <br>b. _./templates_: Webpage template used.
        <br>i. _home.html_:  The **homepage for users to input feelings**.
        <br>ii. _response.html_:  The **response page** for **displaying recommeded wines and link for shopping**.
-      
-2. **Github actions setup for continuous integration**
-  <br>c. _.github/workflows/main.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
+   <br>c. _test_main.py_: Test functions for the application.
+   
+3. **Github actions setup for continuous integration**
+  <br>d. _.github/workflows/main.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
 
-3. **Other files for development environment settings**
-  <br>d. _.devcontainer_: set up the environment for development.
-  <br>e. _.gitignore_: specify file names to ignore.
-  <br>f. _requirements.txt_: list required packages for the project.
+4. **Other files for development environment settings**
+  <br>e. _.devcontainer_: set up the environment for development.
+  <br>f. _.gitignore_: specify file names to ignore.
+  <br>g. _requirements.txt_: list required packages for the project.
 
-4. **Description of the project**
-   <br>g. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with example output and code snippets.
+5. **Description of the project**
+   <br>h. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with example output and code snippets.
