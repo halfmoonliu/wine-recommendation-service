@@ -63,14 +63,14 @@ Deployed Web Service
 Below is an overview of the repository:
    
 1. **Main functions for querying on Dataset**
-   <br>a. _main.py_: The main program building the **flask function**, that does the following:
+   <br>a. _app.py_: The main program building the **flask function**, that does the following:
       <br>i.   Build the home page for users to input feelings (*home()*).
       <br>ii.  Send the input as **prompt to** ***OPEN AI API*** to **get wine recommendation** (_request_rep_).
       <br>iii. **Parse ChatGPT response into readable wine products** (_parse_wine_)
    <br>b. _./templates_: Webpage template used.
        <br>i. _home.html_:  The **homepage for users to input feelings**.
        <br>ii. _response.html_:  The **response page** for **displaying recommeded wines and link for shopping**.
-   <br>c. _test_main.py_: Test functions for the application.
+   <br>c. _test_app.py_: Test functions for the application.
    
 3. **Github actions setup for continuous integration**
   <br>d. _.github/workflows/main.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **installing packages**, **linting**, **testing**, **formatting** would be executed in order (specified in Makefile). 
