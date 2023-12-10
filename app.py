@@ -18,6 +18,7 @@ def request_rep(user_input):
     )
     return completion.choices[0].message.content
 
+print(request_rep("I am so stuck in this work"))
 
 def parse_wine(response):
     '''
@@ -71,3 +72,6 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=9000)
+
+
+    
