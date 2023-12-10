@@ -28,6 +28,33 @@ After creating an **docker image** for the app, it can be shared (pushed) onto *
 
 <img width="1123" alt="Dockerhub" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/b00c331b-93f3-493f-9113-b525b8cbf2f7">
 
+## Deploy service on Azure
+
+Once the app is built, we can use the docker file to create a docker image. To deploy the app on Azure, one should create an **Azure Container Registry**, **create a container repo**, **push the docker image onto to repo**, and use **the Azure app service** to deploy the app on azure.
+
+```
+# Build docker image on Azure container regitry
+docker build -t [RegistryName.azurecr.io]/myapp .
+
+# install homebrew for installing Azure cli (if needed)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew update && brew install azure-cli
+
+# log in to Azure
+az login --tenant 9665bee9-59c7-43dd-b86b-1b15d598b932
+az acr login --name [RegistryName]
+
+# push docker image on Azure container repository
+docker push [RegistryName.azurecr.io]/myapp
+```
+Creater Container Registry:
+<img width="1278" alt="AzureContainerRegistry" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/8967ae5a-44d4-428d-a951-0bc87fe7967b">
+
+Creater Container Repository
+<img width="1266" alt="AzureContainerRepo" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/6c35e0c9-17bb-4611-a032-7826b161f340">
+
+Deployed Web Service
+<img width="1277" alt="AzureAppService" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/5465aba8-a00b-4c16-a988-d26eb719c159">
 
 
 Below is an overview of the repository:
