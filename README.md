@@ -50,10 +50,10 @@ az acr login --name [RegistryName]
 # push docker image on Azure container repository
 docker push [RegistryName.azurecr.io]/myapp
 ```
-Creater Container Registry:
+Created Container Registry:
 <img width="1278" alt="AzureContainerRegistry" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/8967ae5a-44d4-428d-a951-0bc87fe7967b">
 
-Creater Container Repository
+Created Container Repository
 <img width="1266" alt="AzureContainerRepo" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/6c35e0c9-17bb-4611-a032-7826b161f340">
 
 Deployed Web Service
