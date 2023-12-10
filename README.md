@@ -1,7 +1,7 @@
 [![Continuous Integration Quality Check](https://github.com/halfmoonliu/wine-recommendation-service/actions/workflows/cicd.yml/badge.svg)](https://github.com/halfmoonliu/wine-recommendation-service/actions/workflows/cicd.yml)
 
 # Deploy A Wine Recommendation Service on Azure
-This repo demos how to deploy a web-based wine recommendation service using Azure app service. On the front-end page, **users can input their preference, mood, or intended occasion** and **get recommendati**ons of wines** for their mood and **a link for wine shopping**.
+This repo demos how to deploy a web-based wine recommendation service using Azure app service. On the front-end page, **users can input their preference, mood, or intended occasion** and **get recommendations of wines** for their mood and **a link for wine shopping**.
 
 ## Executive Summary for Actionable Insights
 A proof-of-concept of a new **customer engaging feature** is demonstrated below. The user can input their **feelings, thoughts, or events experienced recently** and **get recommendations of wines** and a **link for wine shopping**. The next **actions items** should include the following:
