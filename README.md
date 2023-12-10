@@ -24,8 +24,11 @@ A proof-of-concept of a new **customer engaging feature** is demonstrated below.
 
 ## Upload the Docker image for other to run
 
-After creating an **docker image** for the app, it can be shared (pushed) onto **Docker Hub**, and **people can download the img file to run the app locally** (The docker company has an clear [tutorial](https://docs.docker.com/get-started/04_sharing_app/) for doing exactly that).
+After creating an **docker image** for the app, it can be shared (pushed) onto **Docker Hub**, and **people can download the img file to run the app locally** (The docker company has an clear [tutorial](https://docs.docker.com/get-started/04_sharing_app/) for doing exactly that). Below is the code for running the docker image locally.
 
+```
+Docker run [image_name]
+```
 <img width="1123" alt="Dockerhub" src="https://github.com/halfmoonliu/wine-recommendation-service/assets/46064664/b00c331b-93f3-493f-9113-b525b8cbf2f7">
 
 ## Deploy service on Azure
