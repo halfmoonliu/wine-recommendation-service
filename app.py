@@ -38,8 +38,8 @@ def parse_wine(response):
                 elif sent[i][-1] == ":":
                     split_ind = i
                 elif sent[i] == "-":
-                    split_ind = i
-            
+                    split_ind = i     
+
             sentStart = sent[0][:-1]
             
             try:
