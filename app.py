@@ -18,8 +18,6 @@ def request_rep(user_input):
     )
     return completion.choices[0].message.content
 
-print(request_rep("I am so stuck in this work"))
-
 def parse_wine(response):
     '''
     This function parses a text response from chatGPT and 
@@ -46,9 +44,9 @@ def parse_wine(response):
             
             try:
                 sentStart = int(sentStart)
-            except:
+            except ValueError:
                 split_ind = None
-        if split_ind != None:
+        if split_ind is not None:
             output.append(" ".join(sent[:split_ind]))            
     return output
     
